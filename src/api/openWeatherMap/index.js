@@ -1,3 +1,4 @@
+const weatherAPI = config.weather_Key;
 const API_SITE =  `https://api.openweathermap.org/data/2.5/weather?q=`;
 
 export const getWeather = async (city, state) => {
