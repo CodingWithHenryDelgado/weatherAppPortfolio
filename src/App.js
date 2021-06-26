@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <BackgroundImage />
-      <header>
+      <header className='weather'>
         <Error />
         <Weather />
       </header>
@@ -24,7 +24,7 @@ function App() {
       <aside className="right-wallpaper-control wallpaper-control">
         <BackgroundImageRightControl />
       </aside>
-      <footer>
+      <footer className='App-footer'>
         <Quote />
       </footer>
     </div>

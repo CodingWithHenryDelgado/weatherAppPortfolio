@@ -1,10 +1,10 @@
 import {config} from '../../config'
 
 const weatherAPI = config.weather_Key;
-const API_SITE =  `https://api.openweathermap.org/data/2.5/weather?q=`;
+const API_SITE =  `https://api.openweathermap.org/data/2.5/weather?zip=`;
 
-export const getWeather = async (city, state) => {
-  const response = await fetch(`${API_SITE}${city},${state}${weatherAPI}&units=imperial`);
+export const getWeather = async (zipcode) => {
+  const response = await fetch(`${API_SITE}${zipcode}${weatherAPI}&units=imperial`);
   const json = await response.json();
 
   return {

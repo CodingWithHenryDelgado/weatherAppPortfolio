@@ -4,10 +4,10 @@ export const journalSlice = createSlice({
   name: "journal",
   initialState: {
     entries: [
-      { text: "Water plants", isDone: false },
-      { text: "Making spaget", isDone: false },
-      { text: "Climb a V10", isDone: false },
-      { text: "Make some beats", isDone: false }
+      { text: "Wash dishes", isDone: false },
+      { text: "Call your loved ones", isDone: false },
+      { text: "Take care of yourself", isDone: false },
+      { text: "Have fun today", isDone: false }
     ],
     doneEntries: []
   },

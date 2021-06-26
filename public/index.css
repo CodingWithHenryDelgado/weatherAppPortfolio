@@ -34,17 +34,42 @@ body {
 
 .temperature-container {
   display: flex;
-  padding-right: 40px;
 }
 
 .weather {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .weather p {
   margin: 0;
+}
+
+#zipcode {
+  width: 30%;
+  padding-right: 35%;
+  padding-top: 5%;
+}
+
+.zipcode-input {
+  width: 100%;
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 500;
+  outline: none;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+#zipcode ::placeholder {
+  color: #fff;
+  font-size: 0.5em;
+  opacity: 0.75;
 }
 
 .weather-description {
@@ -54,7 +79,7 @@ body {
 
 .weather-text {
   text-align: left;
-  margin-left: -6px;
+  margin-left: 6px;
 }
 
 #quote {
@@ -109,14 +134,14 @@ body {
 
 header {
   grid-area: Header;
-  padding: 12px 24px;
+  padding: 12px 0;
 }
 
 main {
   grid-area: Main;
   display: flex;
   flex-direction: column;
-  padding-top: 64px;
+  padding-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
   align-items: center;
@@ -124,7 +149,7 @@ main {
 
 footer {
   grid-area: Footer;
-  padding: 24px;
+  padding: 5px 24px 10px 24px;
 }
 
 .surface {

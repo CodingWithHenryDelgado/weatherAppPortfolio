@@ -3,23 +3,19 @@ import openWeatherMapApi from "../../api/openWeatherMap";
 
 export const getWeather = createAsyncThunk(
   "weather/getWeather",
-  ({ city, state }) => openWeatherMapApi.getWeather(city, state)
+  ({ zipcode }) => openWeatherMapApi.getWeather(zipcode)
 );
 
 export const weatherSlice = createSlice({
   name: "weather",
   initialState: {
-    city: "Seattle",
-    state: "Washington",
+    zipcode: "10001",
     metadata: {},
     temperature: ""
   },
   reducers: {
-    setCity: (state, action) => {
-      state.city = action.payload;
-    },
-    setState: (state, action) => {
-      state.state = action.payload;
+    setZipcode: (state, action) => {
+      state.zipcode = action.payload;
     }
   },
   extraReducers: {
@@ -30,6 +26,6 @@ export const weatherSlice = createSlice({
   }
 });
 
-export const { setCity, setState } = weatherSlice.actions;
+export const { setZipcode } = weatherSlice.actions;
 
 export default weatherSlice.reducer;

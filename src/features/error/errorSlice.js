@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getBackgroundImage } from "../backgroundImage/backgroundImageSlice";
 import { getQuote } from "../quote/quoteSlice";
-import { getWeather } from "../weather/weatherSlice";
+import getWeather from "../weather/weatherSlice";
 
 export const errorSlice = createSlice({
   name: "errors",

@@ -1,5 +1,6 @@
 {
-  "name": "weather-app",
+  "name": "inspirationalhomepage",
+  "homepage": "http://inspirationalhomepage.website/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
