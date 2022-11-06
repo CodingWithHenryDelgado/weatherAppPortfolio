@@ -129,7 +129,8 @@ body {
     "Main Main Main"
     "Footer Footer Footer";
   height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header {
@@ -212,7 +213,7 @@ p {
   flex-wrap: wrap;
 }
 
-.entries-list > * {
+.entries-list>* {
   margin-right: 16px;
   margin-bottom: 16px;
 }
@@ -262,7 +263,7 @@ p {
   transition: opacity 0.1s ease-in;
 }
 
-.entry-actions-container > * {
+.entry-actions-container>* {
   margin-right: 6px;
 }
 
